@@ -7,6 +7,7 @@ spec:
     registry:
       url: "docker://kubevirt/fedora-cloud-container-disk-demo"
   size: 8Gi
+  storageClassName: local-shared
 ---
 apiVersion: vm.cluster.gke.io/v1
 kind: VirtualMachine
