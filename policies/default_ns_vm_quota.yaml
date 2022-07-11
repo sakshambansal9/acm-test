@@ -1,7 +1,7 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sTotalCpuLimit
 metadata:
-  name: total-cpu-limit
+  name: default-ns-vm-quota
 spec:
   match:
     kinds:
