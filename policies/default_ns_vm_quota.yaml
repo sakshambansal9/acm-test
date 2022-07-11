@@ -1,0 +1,14 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sTotalCpuLimit
+metadata:
+  name: total-cpu-limit
+spec:
+  match:
+    kinds:
+      - apiGroups: ["vm.cluster.gke.io"]
+        kinds: ["VirtualMachine"]
+    namespaces:
+      - default
+  parameters:
+    totalCpu: 10
+    totalMemory: 9G
