@@ -11,4 +11,4 @@ spec:
       - default
   parameters:
     totalCpu: 10
-    totalMemory: 7G
+    totalMemory: 8G
