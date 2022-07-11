@@ -1,11 +1,12 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
-kind: K8svmlimits
+kind: K8svmmemlimits
 metadata:
-  name: cpu-limit-vm
+  name: individual-vm-limit
 spec:
   match:
     kinds:
       - apiGroups: ["vm.cluster.gke.io"]
         kinds: ["VirtualMachine"]
   parameters:
-    cpu: 40
+    cpu: 5
+    memory: 5Gi
