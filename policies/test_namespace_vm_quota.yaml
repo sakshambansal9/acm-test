@@ -11,4 +11,4 @@ spec:
       - saksham-test
   parameters:
     totalCpu: 7
-    totalMemory: 11G
+    totalMemory: 10G
