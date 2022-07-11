@@ -1,0 +1,14 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sTotalCpuLimit
+metadata:
+  name: test-ns-vm-resource-quota
+spec:
+  match:
+    kinds:
+      - apiGroups: ["vm.cluster.gke.io"]
+        kinds: ["VirtualMachine"]
+    namespaces:
+      - saksham-test
+  parameters:
+    totalCpu: 7
+    totalMemory: 11G
