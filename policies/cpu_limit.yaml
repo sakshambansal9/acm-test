@@ -8,4 +8,4 @@ spec:
       - apiGroups: ["vm.cluster.gke.io"]
         kinds: ["VirtualMachine"]
   parameters:
-    cpu: 4
+    cpu: 40
