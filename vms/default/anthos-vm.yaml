@@ -23,7 +23,7 @@ spec:
     networkName: pod-network
   compute:
     cpu:
-      vcpus: 2
+      vcpus: 3
     memory:
       capacity: 2G
   disks:
