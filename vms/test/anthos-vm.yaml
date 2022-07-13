@@ -2,6 +2,7 @@ apiVersion: vm.cluster.gke.io/v1
 kind: VirtualMachineDisk
 metadata:
   name: disk-from-registry
+  namespace: test
 spec:
   source:
     registry:
@@ -13,7 +14,7 @@ apiVersion: vm.cluster.gke.io/v1
 kind: VirtualMachine
 metadata:
   name: my-kube-vm
-  namespace: default
+  namespace: test
   labels:
     special: key-kubevm
 spec:

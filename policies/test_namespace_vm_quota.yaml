@@ -8,7 +8,7 @@ spec:
       - apiGroups: ["vm.cluster.gke.io"]
         kinds: ["VirtualMachine"]
     namespaces:
-      - saksham-test
+      - test
   parameters:
     totalCpu: 7
     totalMemory: 10G

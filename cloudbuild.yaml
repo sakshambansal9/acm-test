@@ -1,0 +1,5 @@
+steps:
+- name: 'golang'
+  args: ['go', 'get', 'github.com/open-policy-agent/gatekeeper/cmd/gator']
+- name: 'golang'
+  args: ['gator', 'test', '-f=templates/', '-f=constraints/', '-f=vms/']
