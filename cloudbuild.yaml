@@ -1,5 +1,3 @@
 steps:
-- name: 'golang'
-  args: ['go', 'install', 'github.com/open-policy-agent/gatekeeper/cmd/gator']
-- name: 'golang'
+- name: 'openpolicyagent/gator'
   args: ['gator', 'test', '-f=templates/', '-f=constraints/', '-f=vms/']
