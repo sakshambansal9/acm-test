@@ -17,6 +17,7 @@ metadata:
   labels:
     special: key-kubevm
 spec:
+  autoRestartOnConfigurationChange: true
   osType: Linux
   interfaces:
   - name: eth4
